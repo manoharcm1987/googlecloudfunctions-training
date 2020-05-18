@@ -7,6 +7,6 @@
 exports.helloGET = (req, res) => {
   let minVer = process.env.MIN_VER;
   let maxVer = process.env.MAX_VER;
-  let hostName = process.env.HOSTNAME;
+  let hostName = process.env.HOST_NAME;
   res.status(200).send("Function version:" + maxVer + "." + minVer);
 };
